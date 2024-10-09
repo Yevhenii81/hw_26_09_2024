@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -198,18 +198,18 @@ namespace Class_Group_hw_27_06
 
         //overload
 
-        //public static bool operator ==(Group left, Group right)
-        //{
-        //    string averageGrade1 = left.GetName();
-        //    string averageGrade2 = right.GetName();
+        public static bool operator ==(Group left, Group right)
+        {
+            string averageGrade1 = left.GetName();
+            string averageGrade2 = right.GetName();
 
-        //    return averageGrade1 == averageGrade2;
-        //}
+            return averageGrade1 == averageGrade2;
+        }
 
-        //public static bool operator !=(Group left, Group right)
-        //{
-        //    return !(left == right);
-        //}
+        public static bool operator !=(Group left, Group right)
+        {
+            return !(left == right);
+        }
     }
 
     class GroupePrinter
